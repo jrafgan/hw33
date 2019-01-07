@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<div class="container">
+    To do List
+    <ul id="list">
+    </ul>
+</div>
+
+<script type="text/javascript">
+
+    while (true) {
+        var newText = prompt('Please, enter To Do Task');
+        if (newText === null || newText === '') {
+            alert('Task list completed');
+            break;
+        }
+
+        var parent = document.getElementById('list')
+        var newLi = document.createElement('li');
+        newLi.innerHTML = newText;
+        parent.appendChild(newLi);
+        console.log(newLi.innerHTML);
+    }
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+<ol id="todo-list">
+</ol>
+
+<script type="text/javascript">
+
+    var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+
+    for (i = 0; i < tasks.length; i++) {
+
+        var newLi = document.createElement('li');
+        newLi.innerHTML = tasks[i];
+
+        var list = document.getElementById('todo-list');
+        list.appendChild(newLi);
+
+        newLi.className = ("task");
+    }
+
+</script>
+</body>
+
+</html>
